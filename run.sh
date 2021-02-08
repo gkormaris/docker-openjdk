@@ -13,6 +13,8 @@ DEFAULT_JAVA_OPTIONS="-XshowSettings \
  -XX:+ExitOnOutOfMemoryError \
  -XX:InitialRAMPercentage=50 \
  -XX:MaxRAMPercentage=70 \
+ -XX:+HeapDumpOnOutOfMemoryError \
+ -XX:HeapDumpPath=\dumps \
  -Duser.dir=/tmp"
 
 RUN_ARGS=$DEFAULT_JAVA_OPTIONS
